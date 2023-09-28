@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight booking</title>
+    <link rel="stylesheet" href="plane.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Add Bootstrap CSS (if not already included) -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- Your custom CSS file (if any) -->
+<link rel="stylesheet" href="your-custom-styles.css">
+
+     <!-- Link to your CSS file -->
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <div class="navbar">
+              <div class="logo">
+                
+                <h1>TRAVEL FLOT✈️</h1>
+            </div>
+                
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Search Flights</a></li>
+                    <li><a href="#">Book a Flight</a></li>
+                    <li><a href="#">My Bookings</a></li>
+                    
+                </ul>
+                
+            </div>
+        </nav>
+    </header>
+
+    <div class="modal" tabindex="-1" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Details</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p id="content"></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Save </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid p-0 m-0">
+        <div class="row">
+            <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img height="500px" src="ban.jpg" class="d-block w-100" alt="...">
+                    
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img height="500px" src="pt6.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img height="500px" src="https://c4.wallpaperflare.com/wallpaper/393/536/1/the-sky-clouds-flight-lights-wallpaper-preview.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+        <section>
+        <form class="row col-md-8 mx-auto" id="booking-form" style="position: relative;">
+          <div class="blr-bg"></div>
+          <div class="row py-4">
+            <div class="col-md-6">
+              <select name="" id="departure-country" class="form-control">
+                <option value="">Departure from</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <select name="" id="destination-country" class="form-control">
+                <option value="">Departure to</option>
+              </select>
+            </div>
+          </div>
+          <div class="row py-4">
+            <div class="col-md-6">
+              <!-- <select name="" id="departure-country" class="form-control">
+                <option value="">email</option>
+              </select> -->
+              <input type="email" name="" placeholder="Email" class="form-control" id="">
+               
+            </div>
+            <div class="col-md-6">
+              <select name="" id="class-type" class="form-control">
+                <option value="">class</option>
+                <option value="">Economy</option>
+                <option value="">Premium</option>
+                <option value="">Business</option>
+                <option value="">First</option>
+              </select>
+            </div>
+          </div>
+          <div class="row py-4">
+            <div class="col-md-6">
+              <input type="number" class="form-control" id="" placeholder="Passenger">
+            </div>
+            <div class="col-md-6" >
+              <input type="date" class="form-control" id="arrival-date">
+            </div>
+          </div>
+          <div class="row py-4">
+            <div class="col-md-6">
+              <button class="btn btn-success" type="submit">Search</button>
+            </div>
+          </div>
+        </form>
+        </section>
+    </div>
+
+    <section class="section__container plan__container">
+      <p class="subheader">TRAVEL FLOT</p>
+      <h2 class="section__header">Plan your travel with travel flot</h2>
+      <p class="description">
+        Find help with your bookings and travel plans, and see what to expect
+        along your journey.
+      </p>
+      <div class="plan__grid">
+        <div class="plan__content">
+          <span class="number">01</span>
+          <h4>Travel Requirements for flight</h4>
+          <p>
+            Check back frequently for the latest COVID-19 travel and specific testing requirements for your destination, including any stops for connecting flights. You are required to come to the airport with the appropriate travel documents.
+          </p>
+          <span class="number">02</span>
+          <h4> Travel insurance</h4>
+          <p>
+            Travel Insurance is a type of insurance that covers different risks while travelling. It covers medical expenses, lost luggage, flight cancellations, and other losses that a traveller can incur while travelling.
+          </p>
+          <span class="number">03</span>
+          <h4>Features of travel flot</h4>
+          <p>
+            Flight searches and bookings for one-way, round-trip and multi-city flights are quick and simple. Saves both time and money. Every detail about a flight is provided. Customer service is available 24 hours a day, seven days a week via chat and phone.
+          </p>
+        </div>
+        <div class="plan__image">
+          <img src="data:image/jpeg;base64,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" alt="plan" />
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp_mS1DxLTq8jyjUH5wpcNkKbvDJveJw3rkQ&usqp=CAU" alt="plan" />
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZCfa1xloRHRW4Zo-qbCMG9YDP3Og75Vghyg&usqp=CAU" alt="plan" />
+        </div>
+      </div>
+      <section class="memories">
+        <div class="section__container memories__container">
+          <div class="memories__header">
+            <h2 class="section__header">
+              Travel to make memories all around the world
+            </h2>
+            <button class="view__all">View All</button>
+          </div>
+          <div class="memories__grid">
+            <div class="memories__card">
+              <span><i class="ri-calendar-2-line"></i></span>
+              <h4>Multiple Payment Options</h4>
+              <p> Using PayPal, while others prefer to pay on a credit card or a bank transfer. When you increase your client options, It can increase the number of online bookings on your website.
+              </p>
+            </div>
+            <div class="memories__card">
+              <span><i class="ri-shield-check-line"></i></span>
+              <h4>Advanced Reporting</h4>
+              <p>
+               The system reports are simple to create, generate and process allowing you to make the best decisions for your airline business.
+              </p>
+            </div>
+            <div class="memories__card">
+              <span><i class="ri-bookmark-2-line"></i></span>
+              <h4>Mobile Check-In</h4>
+              <p>
+                Provide a mobile boarding pass to a mobile device that can be checked at the airport during safety checks and boarding at the end of the portable check-in cycle.
+              </p>
+            </div>
+            
+          </div>
+        </div>
+        
+        </div>
+        
+      </section>
+      <section class="d-flex justify-content-center">
+        <iframe class="mx-auto" width="560" height="315" src="https://www.youtube.com/embed/6sLVtT6_hAY?si=hxjN7jBksfwXa3rK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </section>
+    
+      
+      
+     
+      
+    
+    <!-- Main content of your application goes here -->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <h3>TRAVEL FLOT</h3>
+          <p>
+            Where Excellence Takes Flight. With a strong commitment to customer
+            satisfaction and a passion for air travel, Travel flot Airlines offers
+            exceptional service and seamless journeys.
+          </p>
+          
+        </div>
+        <div class="footer__col">
+          <h4>INFORMATION</h4>
+          <p>Home</p>
+          <p>About</p>
+          <p>Offers</p>
+          
+        </div>
+        <div class="footer__col">
+          <h4>CONTACT</h4>
+          <p>Support</p>
+          <p>Media</p>
+          <p>Socials</p>
+        </div>
+      </div>
+      
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="plane.js" defer></script>
+
+  </body>
+</html>
+
+
+
+
+
+
+
+

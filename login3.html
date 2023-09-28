@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+    <link rel="stylesheet" href="log.css">
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        body {
+            background-image: url('book9.jpg'); 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        form {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h2>Login Form</h2>
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <input type="submit" value="Submit" onclick="checkPassword()">
+    </form>
+
+    <script>
+        function checkPassword() {
+            var password = document.getElementById("password").value;
+
+            // Check if the entered password is correct (you can replace "your_password" with the actual password)
+            if (password === "Admin@1234") {
+                // Display a success message using a popup
+                alert("You are successfully logged in!");
+                window.open("index.html","blank")
+
+                // Redirect to a new page (replace "new_page.html" with the actual URL)
+                
+            } else {
+                // Display an error message if the password is incorrect
+                alert("Incorrect password. Please try again.");
+            }
+        }
+    </script>
+</body>
+</html>

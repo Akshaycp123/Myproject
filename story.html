@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <style>
+        /* Your custom CSS styles go here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .books-container {
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        .book {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .book img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Book Shop</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Books</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="books-container">
+        <div class="book">
+            <img src="book1.jpg" alt="Book 1">
+            <h2>Book Title 1</h2>
+            <p>Author: Author Name 1</p>
+            <p>Price: $19.99</p>
+        </div>
+
+        <div class="book">
+            <img src="book2.jpg" alt="Book 2">
+            <h2>Book Title 2</h2>
+            <p>Author: Author Name 2</p>
+            <p>Price: $24.99</p>
+        </div>
+
+        <div class="book">
+            <img src="book3.jpg" alt="Book 3">
+            <h2>Book Title 3</h2>
+            <p>Author: Author Name 3</p>
+            <p>Price: $29.99</p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2023 Book Shop
+    </footer>
+
+    <!-- Add Slick Carousel JavaScript libraries -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script>
+        // Initialize Slick Carousel
+        $(document).ready(function(){
+            $('.books-container').slick({
+                slidesToShow: 3, // Number of books shown at once
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000 // Change slide every 3 seconds
+            });
+        });
+    </script>
+</body>
+</html>

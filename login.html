@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="log.css">
+    <title>Login </title>
+    <style>
+        
+        body {
+            background-image: url('book11.jpg'); 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
+        }
+
+        
+        h1 {
+            color: white;
+            text-align: center;
+        }
+
+        p {
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Login Form</h2>
+    <form action="login.php" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    <script>
+        function checkPassword() {
+            var password = document.getElementById("password").value;
+
+            // Check if the entered password is correct (you can replace "your_password" with the actual password)
+            if (password === "Admin@1234") {
+                // Display a success message using a popup
+                alert("You are successfully logged in!");
+
+                // Redirect to a new page (replace "new_page.html" with the actual URL)
+                window.location.href = "new_page.html";
+            } else {
+                // Display an error message if the password is incorrect
+                alert("Incorrect password. Please try again.");
+            }
+        }
+    </script>
+</body>
+</html>

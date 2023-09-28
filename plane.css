@@ -1,0 +1,624 @@
+body,
+h1,
+ul,
+li,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the Navbar */
+header {
+    background-color:white;
+    color: #fff;
+    padding: 5px 0;
+}
+
+/* Reset default margin and padding for the entire page */
+body,
+h1,
+h2,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the navbar container */
+.navbar {
+    height: 70px;
+    background-color: grey;
+    /* Background color of the navbar */
+    color: white;
+    /* Text color */
+    display: flex;
+    /* Make the navbar items horizontally aligned */
+    justify-content: space-between;
+    /* Space out items horizontally */
+    align-items: center;
+    /* Center items vertically */
+    padding: 5px 20px;
+    /* Add padding to the navbar container */
+}
+
+/* Style the navbar title (h1) */
+.navbar h1 {
+    font-size: 28px;
+    color:black;
+    margin-left: 2rem;
+    font-style: oblique;
+}
+
+/* Style the navbar list (ul) */
+.navbar ul {
+    list-style: none;
+    /* Remove default list styles */
+    display: flex;
+    /* Make the list items horizontally aligned */
+}
+
+/* Style the list items (li) in the navbar */
+.navbar li {
+    margin-right: 20px;
+    /* Add spacing between list items */
+}
+
+/* Style the links (a) in the navbar */
+.navbar a {
+    text-decoration: none;
+    /* Remove underlines from links */
+    color: white;
+    /* Text color for links */
+    font-weight: bold;
+    /* Make the links bold */
+    transition: color .3s;
+    /* Add a smooth color transition on hover */
+}
+
+/* Change link color on hover */
+.navbar a:hover {
+    color: #ff9900;
+    /* Change the color to a different one on hover */
+}
+
+/* Style the Footer */
+footer {
+    height: 200px;
+    background-color: #333;
+    color: grey;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer p {
+    font-size: 14px;
+}
+
+/* Add your existing styles here */
+
+/* Style for Variety Carousel */
+.variety-carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-top: 20px;
+}
+
+.carousel-slide {
+    display: none;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+.carousel-slide img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.carousel-slide h3 {
+    font-size: 24px;
+    color: #333;
+}
+
+.carousel-slide p {
+    font-size: 16px;
+    color: #666;
+}
+
+.plan__container .subheader {
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: 600;
+    color: var(--text-dark);
+    letter-spacing: 5px;
+}
+
+.plan__container .section__header {
+    text-align: center;
+    font-size: 3rem;
+    line-height: 4rem;
+    margin-bottom: 1rem;
+}
+
+.plan__container .description {
+    text-align: center;
+    color: var(--text-light);
+}
+
+.plan__grid {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.plan__content .number {
+    display: inline-block;
+    padding: 5px 15px;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-radius: 2rem;
+}
+
+.plan__content .number:nth-child(1) {
+    background-color: blue;
+}
+
+
+.plan__content .number:nth-child(4) {
+    background-color: #e98b6d;
+}
+
+.plan__content .number:nth-child(7) {
+    background-color: #ffcca3;
+}
+
+.plan__content h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+}
+
+.plan__content p {
+    color: var(--text-light);
+    margin-bottom: 2rem;
+}
+
+.plan__image {
+    position: relative;
+}
+
+.plan__image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 10rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.plan__image img:nth-child(1) {
+    max-width: 250px;
+    transform: translate(calc(-50% - 9rem), calc(-50% + 5rem));
+    z-index: 3;
+}
+
+.plan__image img:nth-child(2) {
+    max-width: 260px;
+    transform: translate(-50%, calc(-50% - 5rem));
+    z-index: 2;
+}
+
+.plan__image img:nth-child(3) {
+    max-width: 230px;
+    transform: translate(calc(-50% + 9rem), calc(-50% + 5rem));
+}
+
+/* Style the container */
+
+/* Footer Styles */
+.footer {
+    height: 150px;
+    background-color:grey;
+}
+
+.footer__container {
+    display: grid;
+    grid-template-columns: 2fr repeat(2, 1fr);
+    gap: 5rem;
+}
+
+.footer__col h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.footer__col h4 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.footer__col p {
+    color: white;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.footer__col p:hover {
+    color: var(--white);
+}
+
+.footer__bar {
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    border-top: 1px solid var(--extra-light);
+}
+
+.footer__bar p {
+    font-size: 0.9rem;
+    color: var(--extra-light);
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.socials span {
+    font-size: 1.2rem;
+    color: var(--extra-light);
+}
+
+@media (width < 1200px) {
+
+    .section__container.header__container,
+    .section__container.plan__container,
+    .section__container.lounge__container {
+        overflow: hidden;
+    }
+
+    .memories__grid {
+        gap: 3rem;
+    }
+}
+
+@media (width < 900px) {
+    nav .btn {
+        display: none;
+    }
+
+    .header__container img {
+        min-width: 900px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .booking__container form {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .plan__grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .plan__image {
+        min-height: 600px;
+        grid-area: 1/1/2/2;
+    }
+
+    .memories__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .lounge__container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .lounge__image {
+        min-height: 600px;
+    }
+
+    .travellers__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer__container {
+        gap: 2rem;
+    }
+}
+
+@media (width < 600px) {
+    .nav__links {
+        display: none;
+    }
+
+    .booking__nav span {
+        padding: 1rem 0.5rem;
+    }
+
+    .booking__container form {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .memories__header {
+        flex-direction: column;
+    }
+
+    .memories__grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .lounge__grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .travellers__grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer__container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer__bar {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Style for the section */
+section {
+
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Style for the form container */
+.row.col-md-8 {
+
+    background-image: url("https://media.istockphoto.com/id/1387358730/photo/female-hands-hold-phone-airplane-ticket-application-airlines-credit-card.webp?b=1&s=170667a&w=0&k=20&c=94yLXUveSmB_GYMSm1B8cKU9okDb6h2vg8qydw97e-M=");
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-size: 1000px 500px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.blr-bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    background-color: rgba(0, 0, 0, 0.7);
+    filter: blur(2px);
+    left: 0;
+    top: 0;
+}
+/* Style for form rows */
+.row.py-4 {
+
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/* Style for select inputs */
+.select-container {
+    position: relative;
+}
+
+.select-container select.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style for passenger input */
+input[type="number"].form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style for date input */
+input[type="date"].form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style for the "Search" button */
+.btn.btn-success {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn.btn-success:hover {
+    background-color: #218838;
+}
+
+
+
+.memories {
+    background-color: var(--extra-light);
+}
+
+.memories__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.memories__header .section__header {
+    max-width: 600px;
+}
+
+.memories__header .view__all {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-dark);
+    background: transparent;
+    white-space: nowrap;
+    outline: none;
+    border: 1px solid var(--text-light);
+    border-radius: 2rem;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.memories__grid {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+}
+
+.memories__card {
+    padding: 3rem 2rem;
+    text-align: center;
+    border-radius: 5rem;
+    background-color: var(--white);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.05);
+}
+
+.memories__card span {
+    display: inline-block;
+    padding: 20px 32px;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-radius: 100%;
+}
+
+.memories__card:nth-child(1) span {
+    background-color: green;
+}
+
+
+.memories__card:nth-child(2) span {
+    background-color: blue;
+
+}
+
+.memories__card:nth-child(3) span {
+    background-color: red;
+}
+
+.memories__card h4 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.memories__card p {
+    color: var(--text-light);
+    line-height: 1.75rem;
+}
+
+.memories {
+    background-image: url("https://cdn.pixabay.com/photo/2017/08/02/09/39/airplane-seats-2570438_640.jpg");
+    background-repeat: no-repeat;
+    background-size: 1700px 700px;
+}
+
+.section {
+    background-color: #28a745;
+
+}
+
+/* Style the modal container */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background overlay */
+    z-index: 1;
+    overflow: auto;
+  }
+  
+  /* Style the modal dialog */
+  .modal-dialog {
+    margin: 50px auto;
+    max-width: 600px; /* Set your desired maximum width */
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Style the modal header */
+  .modal-header {
+    background-color: blue; /* Header background color */
+    color: #fff; /* Header text color */
+    padding: 15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  /* Style the modal title */
+  .modal-title {
+    font-size: 20px;
+  }
+  
+  /* Style the close button */
+  .btn-close {
+    color: #fff;
+  }
+  
+  /* Style the modal body */
+  .modal-body {
+    padding: 20px;
+  }
+  
+  /* Style the modal footer */
+  .modal-footer {
+    padding: 15px;
+    text-align: right;
+    background-color: #f2f2f2;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  /* Style the primary button */
+  .btn-primary {
+    background-color:blue;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 8px 20px;
+    cursor: pointer;
+  }
+  
+  /* Style the primary button on hover */
+  .btn-primary:hover {
+    background-color:blue;
+  }
+  

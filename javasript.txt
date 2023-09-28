@@ -1,0 +1,124 @@
+function checkpalindrome(str) {
+ var re = /[^A-Za-z0-9]/g;
+ str = str.toLowerCase().replace(re, '');
+ var len = str.length;
+ for (var i = 0; i < len/2; i++) {
+   if (str[i] !== str[len - 1 - i]) {
+       return 'it is not a palindrome';
+   }
+ }
+ return 'it is a palindrome';
+}
+const str=prompt('Enter a string :');
+const value = checkpalindrome(str);
+console.log(value);
+
+
+
+function checkStringsAnagram(a, b) {
+   let len1 = a.length;
+   let len2 = b.length;
+   if(len1 !== len2){
+      console.log('Invalid Input');
+      return
+   }
+   let str1 = a.split('').sort().join('');
+   let str2 = b.split('').sort().join('');
+   if(str1 === str2){
+      console.log("True");
+   } else { 
+      console.log("False");
+   }
+}
+checkStringsAnagram("indian","ndiani")
+
+
+
+function fizzBuzz(n) {
+    // Declare an array to store the results
+    let result = [];
+ 
+    // Loop from 1 to n (inclusive)
+    for (let i = 1; i <= n; ++i) {
+     
+        // Check if i is divisible by both 3 and 5
+        if (i % 3 === 0 && i % 5 === 0) {
+         
+            // Add "FizzBuzz" to the result array
+            result.push("FizzBuzz");
+        }
+         
+        // Check if i is divisible by 3
+        else if (i % 3 === 0) {
+         
+            // Add "Fizz" to the result array
+            result.push("Fizz");
+        }
+         
+        // Check if i is divisible by 5
+        else if (i % 5 === 0) {
+         
+            // Add "Buzz" to the result array
+            result.push("Buzz");
+        }
+        else {
+         
+            // Add the current number as a string to the
+            // result array
+            result.push(i.toString());
+        }
+    }
+ 
+    // Return the result array
+    return result;
+}
+ 
+// Driver code
+let n = 20;
+ 
+// Call the fizzBuzz function to get the result
+let result = fizzBuzz(n);
+ 
+// Print the result
+console.log(result.join(' '));
+
+
+const arr = [1,1,2,2,3,4,4,5];
+const extractUnique = arr => {
+   const res = [];
+   for(let i = 0; i < arr.length; i++){
+      if(arr.lastIndexOf(arr[i]) !== arr.indexOf(arr[i])){
+         continue;
+      };
+      res.push(arr[i]);
+   };
+   return res;
+};
+console.log(extractUnique(arr));
+
+
+// program to check the number of occurrence of a character
+
+function countString(str, letter) {
+    let count = 0;
+
+    // looping through the items
+    for (let i = 0; i < str.length; i++) {
+
+        // check if the character is at that position
+        if (str.charAt(i) == letter) {
+            count += 1;
+        }
+    }
+    return count;
+}
+
+// take input from the user
+const string = prompt('Enter a string: ');
+const letterToCheck = prompt('Enter a letter to check: ');
+
+//passing parameters and calling the function
+const result = countString(string, letterToCheck);
+
+// displaying the result
+console.log(result);

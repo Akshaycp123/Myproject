@@ -1,0 +1,40 @@
+
+body {
+    background-color: lightblue; /* Change the background color to your desired color */
+    text-align: center; /* Center-align the content */
+    margin: 0; /* Remove default margin */
+    padding: 0;/* Remove default padding */
+    font-family: Arial;
+    font-size: 18px;
+    font-style:italic;
+}
+
+/* Style the form elements */
+form {
+    margin: 20px auto; /* Center-align the form */
+    max-width: 300px; /* Set a max width for the form */
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* Style the radio buttons */
+.radio {
+    margin-right: 10px;
+}
+
+/* Style the table */
+table {
+    margin: 20px auto; /* Center-align the table */
+    border-collapse: collapse;
+    max-width: 600px; /* Set a max width for the table */
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+}
